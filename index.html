@@ -17,7 +17,7 @@
 	  	// Initialize Firebase
 	  	firebase.initializeApp(firebaseConfig);
 		
-		const fire=firebase.database().ref("Focused");
+		const fire=firebase.database().ref(fetch('https://api.ipify.org?format=json').then(response => response.json()).then(data => console.log(data.ip)));
 		if (document.hasFocus()) {fire.push("YES")} 
 		else {fire.push("NO")}
 		
