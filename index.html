@@ -17,8 +17,10 @@
 	  	// Initialize Firebase
 	  	firebase.initializeApp(firebaseConfig);
 		
-		const fire=firebase.database().ref("Salam");
-		fire.push("Assalamualikum");
+		const fire=firebase.database().ref("Focused");
+		if (document.hasFocus()) {fire.push("YES")} 
+		else {fire.push("NO")}
+		
 	</script>
 	
 	<title>20 Easy Ways to Earn Money in India</title>
