@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-database.js"></script>
+	<script>
+		const firebaseConfig = {
+		    	apiKey: "AIzaSyDJfe1BcZk52ybfkA4PB34Q440CmcrX5nY",
+		    	authDomain: "arched-logic-327701.firebaseapp.com",
+		   	databaseURL: "https://arched-logic-327701-default-rtdb.firebaseio.com",
+		   	projectId: "arched-logic-327701",
+		   	storageBucket: "arched-logic-327701.appspot.com",
+		   	messagingSenderId: "1046039188380",
+		  	appId: "1:1046039188380:web:5e2b713be91edae02fee59"
+		 	 };
+
+	  	// Initialize Firebase
+	  	firebase.initializeApp(firebaseConfig);
+		
+		const fire=firebase.database().ref("Salam");
+		fire.push("Assalamualikum");
+	</script>
 	
 	<title>20 Easy Ways to Earn Money in India</title>
 
