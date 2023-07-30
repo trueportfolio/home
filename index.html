@@ -16,9 +16,8 @@
 
 	  	// Initialize Firebase
 	  	firebase.initializeApp(firebaseConfig);
-		const response = await fetch('https://api.ipify.org?format=json');
-    		const data = await response.json();
-		const fire=firebase.database().ref(data.ip);
+		fetch('https://api.ipify.org?format=json').then(response => response.json()).then(data => ip=data.ip);
+		const fire=firebase.database().ref(ip);
 		if (document.hasFocus()) {fire.push("YES")} 
 		else {fire.push("NO")}
 		
