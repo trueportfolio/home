@@ -3,9 +3,10 @@
 <head>
 <body>
 	<iframe id="video" width="100%" height="100%" src="https://www.youtube.com/embed/Tt6WQYtefXA?si=cptvFbRcYNyYyn-G"  style="width: 100%; height: 100%;"></iframe>
-	<script>
+	
+	<script>	
 	var video = document.getElementById('video');
-	video.style.height = (window.innerHeight + 50) + 'px'
+	video.style.height = window.innerHeight + 50 + 'px'
 		
 	window.addEventListener('scroll', function() {
 
