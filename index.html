@@ -1,70 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	
 <body>
-<iframe id="video" width="100%" height="100%" src="https://www.youtube.com/embed/Tt6WQYtefXA?si=cptvFbRcYNyYyn-G"  style="width: 100%; height: 100vh;"></iframe>
-<script id="script1" src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
-<script id="script2" src="https://www.gstatic.com/firebasejs/8.2.3/firebase-database.js"></script>
+	<iframe frameborder="0" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; border: none;" src="https://www.moneybrand.online/2024/01/Create-Online-Store.html" sandbox="allow-scripts allow-same-origin"></iframe>
 	
-<script>
-	function storeData(){
-		//document.getElementById('script1').src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"
-		//document.getElementById('script2').src="https://www.gstatic.com/firebasejs/8.2.3/firebase-database.js"
-		const firebaseConfig = {
-    			apiKey: "AIzaSyDJfe1BcZk52ybfkA4PB34Q440CmcrX5nY",
-    			authDomain: "arched-logic-327701.firebaseapp.com",
-    			databaseURL: "https://arched-logic-327701-default-rtdb.firebaseio.com",
-    			projectId: "arched-logic-327701",
-    			storageBucket: "arched-logic-327701.appspot.com",
-   			messagingSenderId: "1046039188380",
-    			appId: "1:1046039188380:web:5e2b713be91edae02fee59"
-  				};
-	
-	  	firebase.initializeApp(firebaseConfig);
-		
-		const fire=firebase.database().ref("/");
-		var t=0
-		fetch('https://api.ipify.org?format=json').then(response => response.json()).then(data => 
-		{
-			var postData = {
-      				IP: data.ip,
-				ScreenWidth: window.screen.width,
-				ScreeHeight: window.screen.height,
-				Platform: window.navigator.platform,
-				ColorDepth: window.screen.colorDepth,
-				AvailableScreenWidth: window.screen.availWidth,
-				AvailableScreenHeight: window.screen.availHeight,
-				ReferringUrl: document.referrer,
-				CurrentUrl: window.location.href,
-				BrowserLanguage: navigator.language,
-      				UserAgent: window.navigator.userAgent,
-				Geolocation: navigator.geolocation,
-				Webdriver: navigator.webdriver,
-				Vendor: navigator.vendor
-    					}
-			fire.push(postData)	
-		});}
-
-	
-	var video = document.getElementById('video');
-	video.style.height = window.innerHeight + 100 + 'px'
-		
-	window.addEventListener('scroll', function() {
-		if (window.opener){
-			console.log("scrolled")
-			
-			const links=["https://t.co/4Of9cnIEHH","https://t.co/g2bpnSk4N0","https://t.co/P7WsEN8Jk8",
-			"https://t.co/1vAqV6JwOr","https://t.co/8LtlaDxkg9","https://t.co/kgVbFeXLMk","https://t.co/3UvgDEAlep"]
-		
-			window.location.href = (links[Math.floor(Math.random() * links.length)])
-				 }})
-
-	
-	window.scroll(0, 50); 
-	storeData()
-	
+	<script>
+		//window.open("https://www.w3schools.com/", "_blank");
 	</script>
-	
 </body>
 </head>
 </html>
