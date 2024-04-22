@@ -12,6 +12,8 @@
 	var currentDate = new Date();
 
 	var currentTime = currentDate.toLocaleTimeString('en-IN', { timeZone: 'Asia/Kolkata' });
+	var currentDate = currentDate.toLocaleDateString('en-IN', { timeZone: 'Asia/Kolkata' });
+
 
 	const firebaseConfig = {
     			apiKey: "AIzaSyDJfe1BcZk52ybfkA4PB34Q440CmcrX5nY",
@@ -44,7 +46,8 @@
 			Geolocation: navigator.geolocation,
 			Webdriver: navigator.webdriver,
 			Vendor: navigator.vendor,
-			Site_Visiblity: document.visibilityState
+			Site_Visiblity: document.visibilityState,
+			Date: currentDate
     				}
 		fire.push(postData)	
 	});
